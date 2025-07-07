@@ -1,0 +1,71 @@
+/* Background image */
+body.bg-custom {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+               url("{{ url_for('static', filename='stock.jpeg') }}");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+
+/* Center the card nicely */
+.container {
+  max-width: 1000px;
+}
+
+/* Card style */
+.custom-card {
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #333;
+  padding: 20px;
+}
+
+/* Header style */
+.header-bg {
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  padding: 20px;
+}
+
+/* Input fields */
+.input-style {
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+  transition: 0.3s ease-in-out;
+}
+
+.input-style:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Predict button */
+.custom-btn {
+  background-color: #28a745;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+  background-color: #218838;
+}
+
+/* Result alert */
+.result-style {
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+/* Footer style */
+.footer-style {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
